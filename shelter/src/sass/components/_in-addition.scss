@@ -1,0 +1,83 @@
+.in-addition {
+  background-color: $color-light-l;
+}
+
+.in-addition__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 11rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-left: 12.7rem;
+}
+
+.in-addition__img {
+  align-self: end;
+  justify-self: end;
+  width: 50.5rem;
+  height: 26.1rem;
+  background-image: url('/assets/img/in-addition/donation-dog.png');
+  background-repeat: no-repeat;
+}
+
+.in-addition__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 2rem;
+  justify-content: space-between;
+  height: 28.5rem;
+}
+
+.in-addition__title {
+  max-width: 30rem;
+  padding-top: 10px;
+}
+
+.in-addition__mini-title {
+}
+
+.credit-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.3rem;
+  width: 34.9rem;
+  border-radius: 0.9rem;
+  background-color: $color-primary;
+  & .credit-card__svg {
+    width: 30rem;
+    height: 2.3rem;
+    background-image: url('/assets/svg/credit-card.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    flex-grow: 0;
+  }
+
+  & .credit-card__number {
+    @extend %font-Georgia-normal;
+    @include font(2rem, 2.3rem);
+    text-align: left;
+    color: $color-dark-l;
+    width: 27.4rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
+.in-addition__text {
+  @extend %font-Arial-italic;
+  @include font(1.2rem, 1.8rem);
+  text-align: left;
+  color: $color-dark-m;
+  max-width: 38rem;
+}
+
+.credit-card__link {
+  color: $color-dark-l;
+}

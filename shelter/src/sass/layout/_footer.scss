@@ -1,0 +1,98 @@
+.footer {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #513d2f, #211f20);
+    z-index: -1;
+  }
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-top: 4rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.footer__item {
+  max-width: 30.2rem;
+  max-height: 23.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+}
+
+.adress-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.footer__title {
+  color: $color-light-xl;
+  max-width: 28rem;
+}
+
+.adress__svg {
+  background-size: 4rem 3.2rem;
+  width: 4rem;
+  height: 3.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 2rem;
+}
+
+.adress__mail_svg {
+  background-image: url('/assets/svg/footer/icon-email.svg');
+}
+
+.adress__number_svg {
+  background-image: url('/assets/svg/footer/icon-phone.svg');
+}
+
+.map__svg {
+  background-size: 2.1rem 3.2rem;
+  background-image: url('/assets/svg/footer/icon-marker.svg');
+  margin-right: 1, 5rem;
+  margin-right: 0rem;
+}
+
+.adress__link {
+  color: $color-primary;
+}
+
+.footer__img {
+  background-image: url('/assets/img/footer/footer-puppy.png');
+  width: 30rem;
+  height: 31rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  justify-self: end;
+}
+
+.footer__map {
+  margin-left: 2.8rem;
+}
+
+.footer-item-pets {
+  margin-top: 1.7rem;
+}

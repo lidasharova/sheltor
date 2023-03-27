@@ -1,0 +1,81 @@
+//подключение шрифтов
+
+@font-face {
+  font-family: 'Arial';
+  src: url('/assets/fonts/Arial/Arial.ttf');
+}
+
+@font-face {
+  font-family: 'Arial-italic';
+  src: url('/assets/fonts/Arial/Arial.ttf');
+}
+
+@font-face {
+  font-family: 'Georgia-normal';
+  src: url('/assets/fonts/Georgia/Georgia-normal.ttf');
+}
+
+@font-face {
+  font-family: 'Georgia-bold';
+  src: url('/assets/fonts/Georgia/Georgia-bold.ttf');
+}
+
+html {
+  font-size: 62.5%; //10px
+  @extend %font-Georgia-normal;
+  background-color: $color-light-xl;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h2 {
+  @extend %font-Georgia-normal;
+  @include font(4.4rem, 5.7rem);
+  text-align: left;
+  color: $color-light-xl;
+}
+
+h3 {
+  @extend %font-Georgia-normal;
+  @include font(3.5rem, 4.5rem);
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: $color-dark-l;
+}
+
+h4 {
+  @extend %font-Georgia-normal;
+  @include font(2rem, 2.3rem);
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $color-dark-l;
+}
+
+h5 {
+  @extend %font-Georgia-normal;
+  @include font(1.5rem, 1.7rem);
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: $color-dark-l;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}

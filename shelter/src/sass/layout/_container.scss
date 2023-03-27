@@ -1,0 +1,14 @@
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0rem 4rem;
+
+  @include media-laptop {
+  }
+
+  @include media-tablet {
+  }
+  @include media-mobile {
+    // padding: 0 15px;
+  }
+}
